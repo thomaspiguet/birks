@@ -32422,47 +32422,6 @@ a._i=a._i||{};a._i[b]=[];a._i[b]._u=f;a._t=a._t||{};a._t[b]=+new Date;a._o=a._o|
     
     
 
-    <script>
-        // Class name of elements to be hovered
-        const elementClass = "hover-target"; // Update this with the actual class used in the website
-    
-        function triggerHover(element, isHover) {
-            const eventType = isHover ? "mouseover" : "mouseout";
-            const event = new MouseEvent(eventType, {
-                bubbles: true,
-                cancelable: true,
-                view: window
-            });
-            element.dispatchEvent(event);
-        }
-    
-        function autoHover(index = 0) {
-            const elements = document.querySelectorAll(`.${elementClass}`);
-            if (elements.length === 0) return; // Exit if no elements found
-    
-            if (index < elements.length) {
-                const element = elements[index];
-    
-                if (element) {
-                    triggerHover(element, true); // Simulate hover (mouseover)
-    
-                    setTimeout(() => {
-                        triggerHover(element, false); // Remove hover (mouseout)
-                    }, 1000); // Hover duration: 1 second
-                }
-    
-                // Move to the next element
-                setTimeout(() => autoHover(index + 1), 2000);
-            } else {
-                // Restart the sequence after a delay of 5 seconds
-                setTimeout(() => autoHover(0), 5000);
-            }
-        }
-    
-        // Start hovering after a short delay
-        setTimeout(() => autoHover(), 2000);
-    </script>
-
 
     
     </html>
