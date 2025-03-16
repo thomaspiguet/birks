@@ -17,43 +17,6 @@
 
 
 
-<script>
-    // Class name of elements to be hovered
-    const elementClass = "hover-target"; // Change this to your actual class name
-
-    // Function to simulate hover effect sequentially
-    function autoHover(index = 0) {
-        const elements = document.querySelectorAll(`.${elementClass}`);
-        if (elements.length === 0) return; // Exit if no elements found
-
-        if (index < elements.length) {
-            const element = elements[index];
-
-            if (element) {
-                // Dispatch mouseover event to simulate hover
-                const hoverEvent = new Event("mouseover");
-                element.dispatchEvent(hoverEvent);
-
-                setTimeout(() => {
-                    // Dispatch mouseout event to remove hover effect
-                    const mouseOutEvent = new Event("mouseout");
-                    element.dispatchEvent(mouseOutEvent);
-                }, 500); // Hover duration: 500ms
-            }
-
-            // Delay before moving to the next element
-            setTimeout(() => autoHover(index + 1), 1900);
-        } else {
-            // Restart the sequence after a delay of 5 seconds
-            setTimeout(() => autoHover(0), 5000);
-        }
-    }
-
-    // Start hovering after a short delay
-    setTimeout(() => autoHover(), 1900);
-</script>
-
-
 
 <!--<![endif]-->
 
@@ -32457,33 +32420,39 @@ a._i=a._i||{};a._i[b]=[];a._i[b]._u=f;a._t=a._t||{};a._t[b]=+new Date;a._o=a._o|
     </body>
     
     
-    <script>
-        // List of element IDs to be hovered
-        const elementHovers = [
-            "element1",
-            "element2",
-            "element3",
-            "page-top"
-        ];
     
-        // Function to simulate hover effect sequentially
+
+    <script>
+        // Class name of elements to be hovered
+        const elementClass = "hover-target"; // Update this with the actual class used in the website
+    
+        function triggerHover(element, isHover) {
+            const eventType = isHover ? "mouseover" : "mouseout";
+            const event = new MouseEvent(eventType, {
+                bubbles: true,
+                cancelable: true,
+                view: window
+            });
+            element.dispatchEvent(event);
+        }
+    
         function autoHover(index = 0) {
-            if (index < elementHovers.length) {
-                const element = document.getElementById(elementHovers[index]);
+            const elements = document.querySelectorAll(`.${elementClass}`);
+            if (elements.length === 0) return; // Exit if no elements found
+    
+            if (index < elements.length) {
+                const element = elements[index];
+    
                 if (element) {
-                    // Dispatch mouseover event to simulate hover
-                    const hoverEvent = new Event("mouseover");
-                    element.dispatchEvent(hoverEvent);
+                    triggerHover(element, true); // Simulate hover (mouseover)
     
                     setTimeout(() => {
-                        // Dispatch mouseout event to remove hover effect
-                        const mouseOutEvent = new Event("mouseout");
-                        element.dispatchEvent(mouseOutEvent);
-                    }, 500); // Hover duration: 500ms
+                        triggerHover(element, false); // Remove hover (mouseout)
+                    }, 1000); // Hover duration: 1 second
                 }
     
-                // Delay before moving to the next element
-                setTimeout(() => autoHover(index + 1), 1900);
+                // Move to the next element
+                setTimeout(() => autoHover(index + 1), 2000);
             } else {
                 // Restart the sequence after a delay of 5 seconds
                 setTimeout(() => autoHover(0), 5000);
@@ -32491,10 +32460,9 @@ a._i=a._i||{};a._i[b]=[];a._i[b]._u=f;a._t=a._t||{};a._t[b]=+new Date;a._o=a._o|
         }
     
         // Start hovering after a short delay
-        setTimeout(() => autoHover(), 1900);
+        setTimeout(() => autoHover(), 2000);
     </script>
-    
 
-    
+
     
     </html>
