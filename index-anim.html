@@ -1,0 +1,2784 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+<script defer="" type="text/javascript" src="./Sites-maison-birks-ca-Site_files/main.js.download"></script>
+
+    
+        <script defer="" type="text/javascript" src="./Sites-maison-birks-ca-Site_files/wishlist.js.download">
+        </script>
+    
+
+    
+        <script defer="" type="text/javascript" src="./Sites-maison-birks-ca-Site_files/login.js.download">
+        </script>
+    
+
+
+
+
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="./Sites-maison-birks-ca-Site_files/global.css">
+
+    <link rel="stylesheet" href="./Sites-maison-birks-ca-Site_files/wishlist.css">
+
+    <link rel="stylesheet" href="./Sites-maison-birks-ca-Site_files/login.css">
+
+    <link rel="stylesheet" href="./Sites-maison-birks-ca-Site_files/cart.css">
+
+
+
+
+
+
+<link rel="stylesheet" href="./Sites-maison-birks-ca-Site_files/skin.css">
+
+
+
+    <link rel="alternate" hreflang="en-CA" href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show">
+
+<link rel="alternate" hreflang="fr-CA" href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/fr_CA/Wishlist-Show">
+
+
+
+
+
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _searchData: "",
+    _anact: "",
+    _anact_nohit_tag: "",
+    _analytics_enabled: "true",
+    _timeZone: "Canada/Eastern",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+        	dw.ac._searchData = context.searchData;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    },
+    eventsIsEmpty: function() {
+        return 0 == dw.ac._events.length;
+    }
+};
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-cquotient.js) */
+var CQuotient = window.CQuotient = {};
+CQuotient.clientId = 'bjbz-maison-birks-ca';
+CQuotient.realm = 'BJBZ';
+CQuotient.siteId = 'maison-birks-ca';
+CQuotient.instanceType = 'prd';
+CQuotient.locale = 'en_CA';
+CQuotient.fbPixelId = '__UNKNOWN__';
+CQuotient.activities = [];
+CQuotient.cqcid='';
+CQuotient.cquid='';
+CQuotient.cqeid='';
+CQuotient.cqlid='';
+CQuotient.apiHost='api.cquotient.com';
+/* Turn this on to test against Staging Einstein */
+/* CQuotient.useTest= true; */
+CQuotient.useTest = ('true' === 'false');
+CQuotient.initFromCookies = function () {
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+	  var c = ca[i];
+	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	  if (c.indexOf('cqcid=') == 0) {
+		CQuotient.cqcid=c.substring('cqcid='.length,c.length);
+	  } else if (c.indexOf('cquid=') == 0) {
+		  var value = c.substring('cquid='.length,c.length);
+		  if (value) {
+		  	var split_value = value.split("|", 3);
+		  	if (split_value.length > 0) {
+			  CQuotient.cquid=split_value[0];
+		  	}
+		  	if (split_value.length > 1) {
+			  CQuotient.cqeid=split_value[1];
+		  	}
+		  	if (split_value.length > 2) {
+			  CQuotient.cqlid=split_value[2];
+		  	}
+		  }
+	  }
+	}
+}
+CQuotient.getCQCookieId = function () {
+	if(window.CQuotient.cqcid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqcid;
+};
+CQuotient.getCQUserId = function () {
+	if(window.CQuotient.cquid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cquid;
+};
+CQuotient.getCQHashedEmail = function () {
+	if(window.CQuotient.cqeid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqeid;
+};
+CQuotient.getCQHashedLogin = function () {
+	if(window.CQuotient.cqlid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqlid;
+};
+CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
+try {
+	if (Object.prototype.toString.call(events) === "[object Array]") {
+		events.forEach(_trackASingleCQEvent);
+	} else {
+		CQuotient._trackASingleCQEvent(events);
+	}
+} catch(err) {}
+};
+CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
+	if (event && event.id) {
+		if (event.type === dw.ac.EV_PRD_DETAIL) {
+			CQuotient.trackViewProduct( {id:'', alt_id: event.id, type: 'raw_sku'} );
+		} // not handling the other dw.ac.* events currently
+	}
+};
+CQuotient.trackViewProduct = function(/* Object */ cqParamData){
+	var cq_params = {};
+	cq_params.cookieId = CQuotient.getCQCookieId();
+	cq_params.userId = CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.product = cqParamData.product;
+	cq_params.realm = cqParamData.realm;
+	cq_params.siteId = cqParamData.siteId;
+	cq_params.instanceType = cqParamData.instanceType;
+	cq_params.locale = CQuotient.locale;
+	
+	if(CQuotient.sendActivity) {
+		CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
+	} else {
+		CQuotient.activities.push({activityType: 'viewProduct', parameters: cq_params});
+	}
+};
+/* ]]> */
+// -->
+</script>
+
+
+
+
+
+<div class="page" data-action="Wishlist-Show" data-querystring="rurl=1">
+
+<header class="c-header">
+
+    
+
+    
+    <nav role="navigation" class="js-header-nav c-header__nav">
+        <div class="js-header-nav-inner c-header__nav__inner container">
+            <div class="header">
+                
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center navbar-header">
+                    
+
+                            
+                    
+                        <a class="logo-home brand" href="https://www.maisonbirks.com/" title="Maison Birks Home">
+                            <img class="brand-logo" src="./Sites-maison-birks-ca-Site_files/logo.svg" alt="Maison Birks">
+                        </a>
+                    
+                        
+                             <span class="rolex-plaque d-none d-lg-block brands rolex">
+                                <input type="hidden" name="dealerAPIKey" value="da20688ec16dc50f2989dde503a32ef7">
+<input type="hidden" name="currentLocale" value="en_ca">
+<input type="hidden" name="rolexPlaqueColor" value="gold">
+
+<div id="rolex-iframe" class="rolex-iframe" style="width: 150px; height: 70px; transform: scale(1); -ms-transform: scale(1); -webkit-transform: scale(1);">
+    <div>
+        <a href="https://www.maisonbirks.com/en_ca/rolex/discover/">
+            <span class="rolex-retailer-clock"><div class="LinkEnabler" style="position:absolute; height:70px; width:150px; z-index:1;"></div><iframe id="rolex_retailer" title="Rolex Official Retailer" src="./Sites-maison-birks-ca-Site_files/saved_resource.html" style="width:150px;height:70px;border:0;margin:0;padding:0;overflow:hidden;z-index:0;position:relative;scroll:none" scrolling="NO" frameborder="NO"></iframe></span>
+        </a>
+    </div>
+    <script src="./Sites-maison-birks-ca-Site_files/retailercall.js.download"></script>
+</div>
+                             </span>
+                        
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu">
+                <button class="navbar-toggler hamburger-button d-lg-none" type="button" aria-controls="sg-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg class="hamburger-menu" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-hamburger"></use>
+    
+</svg>
+
+                </button>
+                <div class="navbar-toggler close-button d-lg-none d-none">
+                    <button role="button" aria-label="Close Menu">
+                        <svg class="close-icon" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-close"></use>
+    
+</svg>
+
+                    </button>
+                </div>
+                <div class="locale-selector d-none d-lg-block">
+                    
+
+
+
+
+
+
+
+    <div class="dropdown country-selector d-none d-lg-block " data-url="/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Page-SetLocale" tabindex="0">
+        <span class="btn dropdown-toggle" id="dropdownCountrySelector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="locale-currencyCode">
+                CAD
+            </div>  
+            <div class="locale-language">  
+                EN
+            </div>
+        </span>
+        <div class="dropdown-menu dropdown-country-selector" aria-labelledby="dropdownCountrySelector">
+            <a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1#" class="dropdown-item fullscreen-mode d-md-none"><svg class="account-close" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-close"></use>
+    
+</svg>
+</a>
+            
+                
+            
+                
+                    <a class="dropdown-item" href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1#" data-locale="fr_CA" data-currencycode="CAD" data-currentlocale="false">
+                        <div class="locale-label">
+                            <div class="locale-currencyCode">
+                                CAD
+                            </div>
+                            <div class="locale-language">
+                                FR
+                            </div>
+                        </div>
+                    </a>
+                
+            
+        </div>
+    </div>
+
+    <div class="dropdown country-selector mobile-country-selector d-lg-none" data-url="/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Page-SetLocale" tabindex="0">
+        <span class="btn dropdown-toggle" id="mobileDropdownCountrySelector" data-toggle="dropdown">
+            <div class="locale-currencyCode">
+                CAD
+            </div>  
+            <div class="locale-language selected-locale">  
+                EN
+            </div>
+            
+                
+            
+                
+                    <a class="dropdown-item" href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1#" data-locale="fr_CA" data-currencycode="CAD" data-currentlocale="false">
+                        <div class="locale-language">
+                            FR
+                        </div>
+                    </a>
+                
+            
+        </span>
+    </div>
+
+
+                </div>
+                <div class="js-header-main-menu main-menu navbar-toggleable-sm navbar-toggleable-md menu-toggleable-right multilevel-dropdown d-none d-lg-block main-menu-nav" id="sg-navbar-collapse">
+                    <div class="level-1-category">
+                        <div class="row">
+                            
+
+
+
+
+
+
+
+<nav class="c-site-nav navbar navbar-expand-lg bg-inverse col-12">
+    <div class="close-menu clearfix d-lg-none d-none">
+        <div class="back pull-left">
+            <button role="button" aria-label="Back to previous menu">
+                <svg class="back-icon" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-chevron-left"></use>
+    
+</svg>
+
+            </button>
+        </div>
+    </div>
+    <div class="menu-group" role="navigation">
+        <ul class="nav navbar-nav" role="menu">
+            
+                
+                    
+                    
+                        
+
+                        <li class="nav-item dropdown c-site-nav__item level-1" role="presentation">
+                            <a href="https://www.maisonbirks.com/en_ca/rolex/discover/" id="rolex" class="c-site-nav__link nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                Rolex
+                            </a>
+                            
+                            
+
+
+    
+    
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-1 dropdown-menu" role="menu" aria-hidden="true" aria-label="rolex">
+        <div class="c-site-nav__container container d-flex align-items-start justify-content-between">
+            <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="rolex_at_maison-birks" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Discover Rolex
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="rolex_at_maison-birks">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/watches/" id="rolex_collections" role="menuitem" class="c-site-nav__link dropdown-link">Rolex Watches</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/new-watches-2024/" id="rolex-new_watches" role="menuitem" class="c-site-nav__link dropdown-link">New Watches 2024</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex-watchmaking.html" id="rolex-rolex_at_maison_birks-rolex_watchmaking" role="menuitem" class="c-site-nav__link dropdown-link">Watchmaking</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/service" id="rolex-servicing_your_rolex" role="menuitem" class="c-site-nav__link dropdown-link">Servicing</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/world-of-rolex.html" id="rolex-world_of_rolex" role="menuitem" class="c-site-nav__link dropdown-link">World of Rolex</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/maison-birks.html" id="rolex-rolex_at_maison_birks" role="menuitem" class="c-site-nav__link dropdown-link">Rolex at Maison Birks</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/contact" id="rolex-contact_us_menu" role="menuitem" class="c-site-nav__link dropdown-link">Contact Us</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="rolex-by_collections" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    The Rolex Collection
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="rolex-by_collections">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/1908/" id="rolex-1908" role="menuitem" class="c-site-nav__link dropdown-link">1908</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/air-king/" id="rolex-air_king" role="menuitem" class="c-site-nav__link dropdown-link">Air-King</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/cosmograph-daytona/" id="rolex-cosmograph_daytona" role="menuitem" class="c-site-nav__link dropdown-link">Cosmograph Daytona</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/datejust/" id="rolex-datejust" role="menuitem" class="c-site-nav__link dropdown-link">Datejust</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/day-date/" id="rolex-day_date" role="menuitem" class="c-site-nav__link dropdown-link">Day-Date</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/deepsea/" id="rolex-deepsea" role="menuitem" class="c-site-nav__link dropdown-link">Deepsea</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/explorer/" id="rolex-explorer" role="menuitem" class="c-site-nav__link dropdown-link">Explorer</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/gmt-master-ii/" id="rolex-gmt_master_ii" role="menuitem" class="c-site-nav__link dropdown-link">GMT-Master II</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/lady-datejust/" id="rolex-lady_datejust" role="menuitem" class="c-site-nav__link dropdown-link">Lady-Datejust</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/oyster-perpetual/" id="rolex-oyster_perpetual" role="menuitem" class="c-site-nav__link dropdown-link">Oyster Perpetual</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/sea-dweller/" id="rolex-sea_dweller" role="menuitem" class="c-site-nav__link dropdown-link">Sea-Dweller</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/sky-dweller/" id="rolex-sky_dweller" role="menuitem" class="c-site-nav__link dropdown-link">Sky-Dweller</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/submariner/" id="rolex-submariner" role="menuitem" class="c-site-nav__link dropdown-link">Submariner</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/yacht-master/" id="rolex-yacht_master" role="menuitem" class="c-site-nav__link dropdown-link">Yacht-Master</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+</ul>
+
+
+    
+
+
+                        </div></div></li>
+                    
+                
+                    
+                    
+                        <li class="nav-item c-site-nav__item level-1" role="presentation">
+                            <a href="https://www.maisonbirks.com/en_ca/patek-philippe/" id="patek" class="c-site-nav__link nav-link" role="link" tabindex="0">
+                                Patek Philippe
+                            </a>
+                        </li>
+                    
+                
+                    
+                    
+                        
+
+                        <li class="nav-item dropdown c-site-nav__item level-1" role="presentation">
+                            <a id="watches" class="c-site-nav__link nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                Watches
+                            </a>
+                            
+                            
+
+
+    
+    
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-1 dropdown-menu" role="menu" aria-hidden="true" aria-label="watches">
+        <div class="c-site-nav__container container d-flex align-items-start justify-content-between">
+            <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="watches-shop_by_category" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Shop Watches
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="watches-shop_by_category">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/watches/mens-watches/" id="watches-watches_for_him" role="menuitem" class="c-site-nav__link dropdown-link">Men's Watches</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/watches/womens-watches/" id="watches-watches_for_her" role="menuitem" class="c-site-nav__link dropdown-link">Women's Watches</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/watches/shop-all-watches/" id="watches-shop_all_watches" role="menuitem" class="c-site-nav__link dropdown-link">Shop All Watches</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/watches/watch-winders-and-accessories/" id="watches-watch_accessories" role="menuitem" class="c-site-nav__link dropdown-link">Watch Winders &amp; Accessories</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/watches/new-arrival-in-watches/" id="shop_watches-new_arrivals_in_watches" role="menuitem" class="c-site-nav__link dropdown-link">New Arrival in Watches</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/watches/all-watch-brands-a-z/" id="watches-watch_brands_a_z" role="menuitem" class="c-site-nav__link dropdown-link">All Watch Brands A-Z</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="watches-shop_by_brand" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Shop by Brand
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="watches-shop_by_brand">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/baume-and-mercier/shop-all/" id="watches-shop_by_brand-baume__mercier" role="menuitem" class="c-site-nav__link dropdown-link">Baume &amp; Mercier</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/breitling/shop-all/" id="watches-shop_by_brand-breitling" role="menuitem" class="c-site-nav__link dropdown-link">Breitling</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/cartier/shop-all/" id="watches-shop_by_brand-cartier" role="menuitem" class="c-site-nav__link dropdown-link">Cartier</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/frederique-constant/shop-all/" id="watches-shop_by_brand-frederique_constant" role="menuitem" class="c-site-nav__link dropdown-link">Frederique Constant</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/grand-seiko/shop-all/" id="watches-shop_by_brand-grand_seiko" role="menuitem" class="c-site-nav__link dropdown-link">Grand Seiko</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/jaeger-lecoultre/shop-all/" id="watches-shop_by_brand-jaeger" role="menuitem" class="c-site-nav__link dropdown-link">Jaeger LeCoultre</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/longines/shop-all/" id="watches-shop_by_brand-longines" role="menuitem" class="c-site-nav__link dropdown-link">Longines</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/montblanc/shop-all/?prefn1=merchandise_type&amp;prefv1=Watches&amp;start=0&amp;sz=24" id="watches-shop_by_brand-montblanc" role="menuitem" class="c-site-nav__link dropdown-link">Montblanc</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/patek-philippe/" id="watches-shop_by_brand-patek-philippe" role="menuitem" class="c-site-nav__link dropdown-link">Patek Philippe</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/discover/" id="watches-shop_by_brand-rolex" role="menuitem" class="c-site-nav__link dropdown-link">Rolex</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/tag-heuer/shop-all/" id="watches-shop_by_brand-tag_heuer" role="menuitem" class="c-site-nav__link dropdown-link">TAG Heuer</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/tudor/shop-all/" id="watches-shop_by_brand-tudor" role="menuitem" class="c-site-nav__link dropdown-link">TUDOR</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="watches-discover" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Watch Highlights
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="watches-discover">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/watches/roger-dubuis/" id="watches_highlights-roger_dubuis" role="menuitem" class="c-site-nav__link dropdown-link">Roger Dubuis</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/watches/watches-at-maison-birks/" id="watches_highlights-watches_at_maison_birks" role="menuitem" class="c-site-nav__link dropdown-link">Watches at Maison Birks</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/maison-birks-atelier.html" id="watches_highlights-servicing_your_watch" role="menuitem" class="c-site-nav__link dropdown-link">Servicing Your Watch</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+</ul>
+
+
+    
+        <div class="c-site-nav__menu-banner s-header--menu-banner hidden-md-down">
+                
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="c2f953a3fe59b974e7bef37f0d" -->
+        <p><img alt="Breitling Watch" src="./Sites-maison-birks-ca-Site_files/MAISON BIRKS HOME PAGE - NAV BREITLING.png" title="Breitling Watch"></p>
+<h5 style="color:white; margin-left: -30px;">Breitling</h5>
+<a class="shop-now" type="button" href="https://www.maisonbirks.com/en_ca/brands/breitling/shop-all/" ;"=""><i>Shop</i></a>
+    </div> <!-- End content-asset -->
+
+
+
+        </div>
+    
+
+
+                        </div></div></li>
+                    
+                
+                    
+                    
+                        
+
+                        <li class="nav-item dropdown c-site-nav__item level-1" role="presentation">
+                            <a href="https://www.maisonbirks.com/en_ca/jewellery/jewellery-at-maison-birks/" id="fine_jewellery" class="c-site-nav__link nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                Jewellery
+                            </a>
+                            
+                            
+
+
+    
+    
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-1 dropdown-menu" role="menu" aria-hidden="true" aria-label="fine_jewellery">
+        <div class="c-site-nav__container container d-flex align-items-start justify-content-between">
+            <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="fine_jewellery-shop_by_category" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Shop Jewellery
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="fine_jewellery-shop_by_category">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/earrings/" id="fine_jewellery-earrings" role="menuitem" class="c-site-nav__link dropdown-link">Earrings</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/necklaces/" id="fine_jewellery-necklaces" role="menuitem" class="c-site-nav__link dropdown-link">Necklaces</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/rings/" id="fine_jewellery-rings" role="menuitem" class="c-site-nav__link dropdown-link">Rings</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/bracelets/" id="fine_jewellery-bracelets" role="menuitem" class="c-site-nav__link dropdown-link">Bracelets</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/high-jewellery/" id="jewellery-jewellery_highlights-most_coveted_jewellery" role="menuitem" class="c-site-nav__link dropdown-link">High Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/birks/jewellery-for-baby-and-kids/" id="fine_jewellery-jewellery_for_baby__kids" role="menuitem" class="c-site-nav__link dropdown-link">Baby &amp; Kids Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/mens-jewellery/" id="fine_jewellery-jewellery_for_men" role="menuitem" class="c-site-nav__link dropdown-link">Men's Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/birks/shop-all/" id="bijoux_birks-by_category-shop_all" role="menuitem" class="c-site-nav__link dropdown-link">Shop Birks Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/all-fine-jewellery/" id="fine_jewellery-shop_all" role="menuitem" class="c-site-nav__link dropdown-link">All Fine Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/jewellery-boxes-and-storage/" id="fine_jewellery-jewellery_boxes" role="menuitem" class="c-site-nav__link dropdown-link">Jewellery Boxes &amp; Storage</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/all-jewellery-brands-a-z/" id="jewellery-jewellery_brands_a_z" role="menuitem" class="c-site-nav__link dropdown-link">All Jewellery Brands A-Z</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="fine_jewelry-shop_by_material_stone" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Shop Styles
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="fine_jewelry-shop_by_material_stone">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/yellow-gold-jewellery/" id="fine_jewellery-yellow_gold_jewellery" role="menuitem" class="c-site-nav__link dropdown-link">Yellow Gold Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/white-gold-jewellery/" id="fine_jewellery-white_gold_jewellery" role="menuitem" class="c-site-nav__link dropdown-link">White Gold Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/rose-gold-jewellery/" id="fine_jewellery-rose_gold_jewellery" role="menuitem" class="c-site-nav__link dropdown-link">Rose Gold Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/silver-jewellery/" id="fine_jewellery-silver_jewelry" role="menuitem" class="c-site-nav__link dropdown-link">Silver Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/diamond-jewellery/" id="fine_jewellery-diamond_jewellery" role="menuitem" class="c-site-nav__link dropdown-link">Diamond Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/pearl-jewellery/" id="fine_jewellery-pearl_jewelry" role="menuitem" class="c-site-nav__link dropdown-link">Pearl Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/sapphire-jewellery/" id="fine_jewellery-sapphire_jewelry" role="menuitem" class="c-site-nav__link dropdown-link">Sapphire Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/emerald-jewellery/" id="jewellery-shop_styles-emerald_jewellery" role="menuitem" class="c-site-nav__link dropdown-link">Emerald Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/ruby-jewellery/" id="jewellery-shop_styles-ruby-jewellery" role="menuitem" class="c-site-nav__link dropdown-link">Ruby Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/coloured-gemstones/" id="fine_jewellery-coloured_gemstones" role="menuitem" class="c-site-nav__link dropdown-link">Coloured Gemstones</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="fine_jewellery-discover" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Jewellery Highlights
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="fine_jewellery-discover">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/personalized-jewellery/" id="jewellery-shop_jewellery-personalized_jewellery" role="menuitem" class="c-site-nav__link dropdown-link">Personalized Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/new-arrivals-in-jewellery/" id="fine_jewellery-new_arrivals_" role="menuitem" class="c-site-nav__link dropdown-link">New Arrivals in Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/bestselling-jewellery/" id="fine_jewellery-best_sellers" role="menuitem" class="c-site-nav__link dropdown-link">Bestselling Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/jewellery-at-maison-birks/" id="jewellery-jewellery_at_maison_birks" role="menuitem" class="c-site-nav__link dropdown-link">Jewellery at Maison Birks</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/bespoke-custom-jewellery/" id="jewellery-bespoke_custom_jewellery" role="menuitem" class="c-site-nav__link dropdown-link">Bespoke Custom Jewellery</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+</ul>
+
+
+    
+        <div class="c-site-nav__menu-banner s-header--menu-banner hidden-md-down">
+                
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="b6526a2b81bd12d4a74cfa03b0" -->
+        <p><img alt="Birks Muse Collection" src="./Sites-maison-birks-ca-Site_files/Birks-Muse-Gold-Drop-Pendants.jpg" title="Birks Muse Collection"></p>
+
+<h5 style="margin-left: -30px; color: #000000">Birks Muse</h5>
+
+<a class="shop-now" type="button" href="https://www.maisonbirks.com/en_ca/brands/birks/shop-all/"><i>Shop</i></a>
+    </div> <!-- End content-asset -->
+
+
+
+        </div>
+    
+
+
+                        </div></div></li>
+                    
+                
+                    
+                    
+                        
+
+                        <li class="nav-item dropdown c-site-nav__item level-1" role="presentation">
+                            <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/" id="wedding" class="c-site-nav__link nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                Engagement &amp; Wedding
+                            </a>
+                            
+                            
+
+
+    
+    
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-1 dropdown-menu" role="menu" aria-hidden="true" aria-label="wedding">
+        <div class="c-site-nav__container container d-flex align-items-start justify-content-between">
+            <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="wedding-shop_by_category" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Engagement
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="wedding-shop_by_category">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/engagement-rings/" id="engagement_wedding-engagement-shop_all_engagement_rings" role="menuitem" class="c-site-nav__link dropdown-link">Engagement Rings</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/shop-solitaire-engagement-rings/" id="engagement_wedding-engagement-solitaire_engagement_rings" role="menuitem" class="c-site-nav__link dropdown-link">Shop Solitaire Engagement Rings</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/shop-halo-engagement-rings/" id="engagement_wedding-engagement-halo_engagement_rings" role="menuitem" class="c-site-nav__link dropdown-link">Shop Halo Engagement Rings</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/shop-unique-engagement-rings/" id="engagement_wedding-engagement-unique_engagement_rings" role="menuitem" class="c-site-nav__link dropdown-link">Shop Unique Engagement Rings</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/the-engagement-guide/" id="engagement_wedding-bridal_highlights-the_engagement_and_wedding_guide" role="menuitem" class="c-site-nav__link dropdown-link">The Engagement Guide</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="engagement_wedding-wedding" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Wedding
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="engagement_wedding-wedding">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/all-wedding-bands/" id="engagement_wedding-wedding-wedding_bands_shop_all" role="menuitem" class="c-site-nav__link dropdown-link">All Wedding Bands</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/womens-wedding-bands/" id="engagement_wedding-wedding-womens_wedding_bands" role="menuitem" class="c-site-nav__link dropdown-link">Women's Wedding Bands</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/mens-wedding-bands/" id="engagement_wedding-wedding-mens_wedding_bands" role="menuitem" class="c-site-nav__link dropdown-link">Men's Wedding Bands</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/anniversary-and-eternity-bands/" id="wedding-wedding-eternity_anniversary_bands" role="menuitem" class="c-site-nav__link dropdown-link">Anniversary &amp; Eternity Bands</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/wedding-jewellery/" id="wedding-wedding-wedding_jewellery" role="menuitem" class="c-site-nav__link dropdown-link">Wedding Jewellery</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/gifts-for-the-wedding-party/" id="wedding-wedding-gifts_for_the_wedding_party" role="menuitem" class="c-site-nav__link dropdown-link">Gifts for the Wedding Party</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/something-blue/" id="engagement_wedding-wedding-something_blue" role="menuitem" class="c-site-nav__link dropdown-link">Something Blue</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="wedding-discover" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Bridal Highlights
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="wedding-discover">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/wedding.html" id="wedding-birks_collections" role="menuitem" class="c-site-nav__link dropdown-link">Birks Bridal</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/chaumet/chaumet-bridal/discover/" id="wedding-discover-chaumet" role="menuitem" class="c-site-nav__link dropdown-link">Chaumet Bridal Collection</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/engagement-and-wedding/engagement-and-wedding-brands-a-z/" id="engagement_wedding-bridal_highlights-engagement_wedding_brands_a_z" role="menuitem" class="c-site-nav__link dropdown-link">Engagement &amp; Wedding Brands A-Z</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/1879-planning-the-perfect-proposal.html" id="engagement_wedding-bridal_highlights-planning_the_perfect_proposal" role="menuitem" class="c-site-nav__link dropdown-link">Planning the Perfect Proposal</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/bespoke-custom-jewellery/" id="engagement_wedding-engagement_wedding_highlights-bespoke_custom_bridal_jewellery" role="menuitem" class="c-site-nav__link dropdown-link">Bespoke Custom Bridal Jewellery</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+</ul>
+
+
+    
+        <div class="c-site-nav__menu-banner s-header--menu-banner hidden-md-down">
+                
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="69146b9a9ed4ca4dc162399650" -->
+        <p><img alt="Birks solitaire diamond engagement rings on a blue background" src="./Sites-maison-birks-ca-Site_files/BijouxBirks_Q4_BridalCamp_Web_MenuDropDown_300x563_V2.jpg" title="Birks solitaire diamond engagement rings"></p>
+<h5 style="color:white; margin-left: -30px;">Birks Bridal</h5>
+<a class="shop-now" type="button" href="https://www.maisonbirks.com/en_ca/brands/birks/birks-bridal/">Discover</a>
+    </div> <!-- End content-asset -->
+
+
+
+        </div>
+    
+
+
+                        </div></div></li>
+                    
+                
+                    
+                    
+                        
+
+                        <li class="nav-item dropdown c-site-nav__item level-1" role="presentation">
+                            <a id="gifts" class="c-site-nav__link nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                Gifts
+                            </a>
+                            
+                            
+
+
+    
+    
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-1 dropdown-menu" role="menu" aria-hidden="true" aria-label="gifts">
+        <div class="c-site-nav__container container d-flex align-items-start justify-content-between">
+            <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="gifts-gift_guides" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Gift Guides
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="gifts-gift_guides">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/gifts/gifts-for-her/" id="gifts-gifts_for_her" role="menuitem" class="c-site-nav__link dropdown-link">Gifts for Her</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/gifts/gifts-for-him/" id="gifts-gifts_for_him" role="menuitem" class="c-site-nav__link dropdown-link">Gifts for Him</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/gifts/gifts-for-baby-and-kids/" id="gifts-gifts_for_baby__kids" role="menuitem" class="c-site-nav__link dropdown-link">Gifts for Baby &amp; Kids</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/birks/birks-bridal/birks-wedding-party-gifts/" id="gifts-gift_guides-gifts_for_the_wedding_party" role="menuitem" class="c-site-nav__link dropdown-link">Gifts for the Wedding Party</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/gifts/gifts-at-maison-birks/" id="gifts-gifts_at_maison_birks" role="menuitem" class="c-site-nav__link dropdown-link">Gifts at Maison Birks</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="gifts-shop_by_category" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Accessories
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="gifts-shop_by_category">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/accessories/" id="gifts-accessories" role="menuitem" class="c-site-nav__link dropdown-link">Shop All Accessories</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/jewellery-boxes-and-storage/" id="gifts-jewellery_storage" role="menuitem" class="c-site-nav__link dropdown-link">Jewellery Boxes &amp; Storage</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/watches/watch-winders-and-accessories/" id="gifts-watch_accessories" role="menuitem" class="c-site-nav__link dropdown-link">Watch Winders &amp; Accessories</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/gifts/pens-and-writing-instruments/" id="gifts-writing_instruments" role="menuitem" class="c-site-nav__link dropdown-link">Pens &amp; Writing Instruments</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/gifts/leather-accessories/" id="gifts-shop_by_category-leather_accessories" role="menuitem" class="c-site-nav__link dropdown-link">Leather Accessories</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/gifts/picture-frames/" id="gifts-picture_frames" role="menuitem" class="c-site-nav__link dropdown-link">Picture Frames</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/gifts/cufflinks/" id="gifts-cufflinks" role="menuitem" class="c-site-nav__link dropdown-link">Cufflinks</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/maison-birks-egift-card/egiftcard.html" id="gifts-egift_card" role="menuitem" class="c-site-nav__link dropdown-link">eGift Card</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/gifts/accessory-brands-a-z/" id="gifts-accessories-accessory_brands_a_z" role="menuitem" class="c-site-nav__link dropdown-link">Accessory Brands A-Z</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="gifts-shop_by_brand" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Milestone Moments
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="gifts-shop_by_brand">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/gifts/anniversary-gifts/" id="gifts-milestone_moments-anniversary_gifts" role="menuitem" class="c-site-nav__link dropdown-link">Anniversary Gifts</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/gifts/birthday-gifts/" id="gifts-milestone_moments-birthday_gifts" role="menuitem" class="c-site-nav__link dropdown-link">Birthday Gifts</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/gifts/celebrate-with-diamonds/" id="gifts-milestone_moments-celebrate_with_diamonds" role="menuitem" class="c-site-nav__link dropdown-link">Celebrate with Diamonds</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/gifts/congratulatory-gifts/" id="gifts-milestone_moments-congratulatory_gifts" role="menuitem" class="c-site-nav__link dropdown-link">Congratulatory Gifts</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+</ul>
+
+
+    
+        <div class="c-site-nav__menu-banner s-header--menu-banner hidden-md-down">
+                
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="0203e4f5fae11271b5944f13fe" -->
+        <p><img alt="Montblanc accessories" src="./Sites-maison-birks-ca-Site_files/MONT BLANC GIFTS NAV.png" title="Montblanc Accessories"></p>
+<h5 style="color:white; margin-left: -30px;">Montblanc</h5>
+<a class="shop-now" href="https://www.maisonbirks.com/en_ca/brands/montblanc/shop-all/" ;"=""><i>Shop</i></a>
+    </div> <!-- End content-asset -->
+
+
+
+        </div>
+    
+
+
+                        </div></div></li>
+                    
+                
+                    
+                    
+                        
+
+                        <li class="nav-item dropdown c-site-nav__item level-1" role="presentation">
+                            <a href="https://www.maisonbirks.com/en_ca/brands/" id="brands" class="c-site-nav__link nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                Brands
+                            </a>
+                            
+                            
+
+
+    
+    
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-1 dropdown-menu" role="menu" aria-hidden="true" aria-label="brands">
+        <div class="c-site-nav__container container d-flex align-items-start justify-content-between">
+            <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="brands-watches" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Watches
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="brands-watches">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/rolex/discover/" id="brands-rolex" role="menuitem" class="c-site-nav__link dropdown-link">Rolex</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/patek-philippe/" id="brands-patek" role="menuitem" class="c-site-nav__link dropdown-link">Patek Philippe</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/cartier/" id="brands-cartier" role="menuitem" class="c-site-nav__link dropdown-link">Cartier</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/breitling/" id="brands-breitling" role="menuitem" class="c-site-nav__link dropdown-link">Breitling</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/longines/" id="brands-longines" role="menuitem" class="c-site-nav__link dropdown-link">Longines</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/tag-heuer/" id="brands-tag_heuer" role="menuitem" class="c-site-nav__link dropdown-link">TAG Heuer</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/tudor/" id="brands-tudor" role="menuitem" class="c-site-nav__link dropdown-link">TUDOR</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/watches/all-watch-brands-a-z/" id="brands-watches-watch_brands_a_z" role="menuitem" class="c-site-nav__link dropdown-link">All Watch Brands A-Z</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="brands-jewellery" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Jewellery
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="brands-jewellery">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/birks/" id="brands-bijoux_birks" role="menuitem" class="c-site-nav__link dropdown-link">Birks</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/chaumet/" id="brands-chaumet" role="menuitem" class="c-site-nav__link dropdown-link">Chaumet</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/dinh-van/" id="brands-dinh_van_paris" role="menuitem" class="c-site-nav__link dropdown-link">dinh van</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/fope/" id="brands-fope" role="menuitem" class="c-site-nav__link dropdown-link">FOPE</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/fred/" id="brands-fred_paris" role="menuitem" class="c-site-nav__link dropdown-link">FRED</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/messika/" id="brands-messika" role="menuitem" class="c-site-nav__link dropdown-link">Messika</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/pasquale-bruni/" id="brands-pasquale_bruni" role="menuitem" class="c-site-nav__link dropdown-link">Pasquale Bruni</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/jewellery/all-jewellery-brands-a-z/" id="brands-jewellery-watch_brands_a_z" role="menuitem" class="c-site-nav__link dropdown-link">All Jewellery Brands A-Z</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+        
+            <li class="dropdown-item dropdown c-site-nav__item " role="presentation">
+                <a id="brands-brand_highlights" class="c-site-nav__link dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                    Brand Highlights
+
+                </a>
+                
+                
+
+
+    <div class="c-site-nav__menu c-site-nav__menu--lvl-2
+    dropdown-menu " role="menu" aria-hidden="true" aria-label="brands-brand_highlights">
+        <ul class="c-site-nav__item-list">
+
+
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/marco-bicego/" id="brands-marco_bicego" role="menuitem" class="c-site-nav__link dropdown-link">Marco Bicego</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/monica-rich-kosann/" id="brands-monica_rich_kosann" role="menuitem" class="c-site-nav__link dropdown-link">Monica Rich Kosann</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/montblanc/" id="brands-montblanc" role="menuitem" class="c-site-nav__link dropdown-link">Montblanc</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/roberto-coin/" id="brands-roberto_coin" role="menuitem" class="c-site-nav__link dropdown-link">Roberto Coin</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/shy-creation/" id="brands-shy_creation" role="menuitem" class="c-site-nav__link dropdown-link">Shy Creation</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/wolf/" id="brands-wolf" role="menuitem" class="c-site-nav__link dropdown-link">WOLF</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/yoko-london/" id="brands-yoko_london" role="menuitem" class="c-site-nav__link dropdown-link">Yoko London</a>
+            </li>
+        
+    
+        
+            <li class="dropdown-item c-site-nav__item" role="presentation">
+                <a href="https://www.maisonbirks.com/en_ca/brands/all-brands-a-z/" id="brands-brand_highlights-brands_a_z" role="menuitem" class="c-site-nav__link dropdown-link">All Brands A-Z</a>
+            </li>
+        
+    
+</ul>
+
+
+
+            </div></li>
+        
+    
+</ul>
+
+
+    
+        <div class="c-site-nav__menu-banner s-header--menu-banner hidden-md-down">
+                
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="bc334e2b4d586d44bcc3035b5a" -->
+        <p><img alt="FRED Jewellery" src="./Sites-maison-birks-ca-Site_files/MAISON BIRKS HOME PAGE - NAV FRED.png" title="FRED Jewellery"></p>
+<h5 style="color:white; margin-left: -30px;">FRED</h5>
+<a class="shop-now" type="button" href="https://www.maisonbirks.com/en_ca/brands/fred/shop-all/"><i>Shop</i></a>
+    </div> <!-- End content-asset -->
+
+
+
+        </div>
+    
+
+
+                        </div></div></li>
+                    
+                
+                    
+                    
+                        <li class="nav-item c-site-nav__item level-1" role="presentation">
+                            <a href="https://www.maisonbirks.com/en_ca/sale/" id="sale" class="c-site-nav__link nav-link" role="link" tabindex="0">
+                                Sale
+                            </a>
+                        </li>
+                    
+                
+            
+        </ul>
+    </div>
+</nav>
+
+                            <div class="container d-lg-none mobile-icons-container">
+    <div class="row mobile-icons">
+        <div class="account mobile-account">
+            
+
+
+
+
+
+
+
+    <div class="user" aria-expanded="false">
+        <a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1#" id="myaccount" class="d-flex" aria-haspopup="false" aria-label="Account" role="button">
+            <img src="./Sites-maison-birks-ca-Site_files/account.png" alt="My Account" tabindex="0" class="c-icon c-icon--sign-in header-icon">
+            <span class="icon-title-name hidden-lg-down hide">
+                My Account
+            </span>
+        </a>
+         <div class="popover popover-bottom">
+            <ul class="nav" role="menu" aria-label="My account navigation" aria-hidden="true">
+                <li class="nav-item" role="presentation"><a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Login-Show?action=login" role="menuitem">Sign In</a></li>
+                <li class="nav-item" role="presentation"><a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Login-Show?action=register" role="menuitem">Create an Account</a></li>
+                <li class="nav-item" role="presentation"><a href="https://www.maisonbirks.com/en_ca/birks-flexiticard.html" role="menuitem">Maison Birks FlexitiCard</a></li>
+
+                
+            </ul>
+        </div>
+
+        <a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1" role="button" aria-label="Login to your account">
+
+        </a>
+    </div>
+    
+
+
+        </div>
+        <div class="store-locator d-sm-block d-md-none">
+            <a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Stores-Find?showMap=true&amp;horizontalView=true&amp;isForm=true" class="d-flex">
+                <svg class="c-icon location-icon header-icon" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-location"></use>
+    
+</svg>
+
+                <span class="icon-title-name">
+                    Store Locator
+                </span>
+            </a>
+        </div>
+        <div class="locale-selector mobile-locale-selector d-lg-none d-md-none">
+            
+
+
+
+
+
+
+
+    <div class="dropdown country-selector d-none d-lg-block" data-url="/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Page-SetLocale" tabindex="0">
+        <span class="btn dropdown-toggle" id="dropdownCountrySelector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="locale-currencyCode">
+                CAD
+            </div>  
+            <div class="locale-language">  
+                EN
+            </div>
+        </span>
+        <div class="dropdown-menu dropdown-country-selector" aria-labelledby="dropdownCountrySelector">
+            <a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1#" class="dropdown-item fullscreen-mode d-md-none"><svg class="account-close" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-close"></use>
+    
+</svg>
+</a>
+            
+                
+            
+                
+                    <a class="dropdown-item" href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1#" data-locale="fr_CA" data-currencycode="CAD" data-currentlocale="false">
+                        <div class="locale-label">
+                            <div class="locale-currencyCode">
+                                CAD
+                            </div>
+                            <div class="locale-language">
+                                FR
+                            </div>
+                        </div>
+                    </a>
+                
+            
+        </div>
+    </div>
+
+    <div class="dropdown country-selector mobile-country-selector d-lg-none" data-url="/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Page-SetLocale" tabindex="0">
+        <span class="btn dropdown-toggle" id="mobileDropdownCountrySelector" data-toggle="dropdown">
+            <div class="locale-currencyCode">
+                CAD
+            </div>  
+            <div class="locale-language selected-locale">  
+                EN
+            </div>
+            
+                
+            
+                
+                    <a class="dropdown-item" href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1#" data-locale="fr_CA" data-currencycode="CAD" data-currentlocale="false">
+                        <div class="locale-language">
+                            FR
+                        </div>
+                    </a>
+                
+            
+        </span>
+    </div>
+
+
+        </div>
+    </div>
+</div>
+                            <div class="container d-lg-none justify-content-center mobile-branding-container">
+    <div class="row">
+        <div class="locale-selector mobile-locale-selector d-none d-md-block d-lg-none">
+            
+
+
+
+
+
+
+
+    <div class="dropdown country-selector d-none d-lg-block" data-url="/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Page-SetLocale" tabindex="0">
+        <span class="btn dropdown-toggle" id="dropdownCountrySelector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="locale-currencyCode">
+                CAD
+            </div>  
+            <div class="locale-language">  
+                EN
+            </div>
+        </span>
+        <div class="dropdown-menu dropdown-country-selector" aria-labelledby="dropdownCountrySelector">
+            <a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1#" class="dropdown-item fullscreen-mode d-md-none"><svg class="account-close" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-close"></use>
+    
+</svg>
+</a>
+            
+                
+            
+                
+                    <a class="dropdown-item" href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1#" data-locale="fr_CA" data-currencycode="CAD" data-currentlocale="false">
+                        <div class="locale-label">
+                            <div class="locale-currencyCode">
+                                CAD
+                            </div>
+                            <div class="locale-language">
+                                FR
+                            </div>
+                        </div>
+                    </a>
+                
+            
+        </div>
+    </div>
+
+    <div class="dropdown country-selector mobile-country-selector d-lg-none" data-url="/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Page-SetLocale" tabindex="0">
+        <span class="btn dropdown-toggle" id="mobileDropdownCountrySelector" data-toggle="dropdown">
+            <div class="locale-currencyCode">
+                CAD
+            </div>  
+            <div class="locale-language selected-locale">  
+                EN
+            </div>
+            
+                
+            
+                
+                    <a class="dropdown-item" href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1#" data-locale="fr_CA" data-currencycode="CAD" data-currentlocale="false">
+                        <div class="locale-language">
+                            FR
+                        </div>
+                    </a>
+                
+            
+        </span>
+    </div>
+
+
+        </div>
+        <div class="col-12 d-flex justify-content-center menu-branding">
+            
+                
+                    <div class="mobile-brand-logo rolex">
+                        <input type="hidden" name="dealerAPIKey" value="da20688ec16dc50f2989dde503a32ef7">
+<input type="hidden" name="currentLocale" value="en_ca">
+<input type="hidden" name="rolexPlaqueColor" value="gold">
+
+<div id="rolex-iframe" class="rolex-iframe" style="width: 150px; height: 70px; transform: scale(1); -ms-transform: scale(1); -webkit-transform: scale(1);">
+    <div>
+        <a href="https://www.maisonbirks.com/en_ca/rolex/discover/">
+            <span class="rolex-retailer-clock"><div class="LinkEnabler" style="position:absolute; height:70px; width:150px; z-index:1;"></div><iframe id="rolex_retailer" title="Rolex Official Retailer" src="./Sites-maison-birks-ca-Site_files/saved_resource(1).html" style="width:150px;height:70px;border:0;margin:0;padding:0;overflow:hidden;z-index:0;position:relative;scroll:none" scrolling="NO" frameborder="NO"></iframe></span>
+        </a>
+    </div>
+    <script src="./Sites-maison-birks-ca-Site_files/retailercall.js.download"></script>
+</div>
+                    </div>
+                
+                
+            
+                
+                    <div class="mobile-brand-logo patekphilippe">
+                        <a href="https://www.maisonbirks.com/en_ca/patek-philippe/">
+                            <img src="./Sites-maison-birks-ca-Site_files/PatekPhilippe.png" alt="Patek Philippe">
+                        </a>
+                    </div>
+                
+            
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex header-icons">
+                    <div class="search-icon hidden-md-down d-flex" role="button" tabindex="0">
+                        <img src="./Sites-maison-birks-ca-Site_files/search.png" alt="Search" tabindex="0" class="search search-icon hidden-sm-down header-icon">
+                        <span class="icon-title-name hidden-lg-down hide">
+                            Search
+                        </span>
+                    </div>
+                    <img src="./Sites-maison-birks-ca-Site_files/search.png" alt="Search" tabindex="0" class="search-icon d-lg-none header-icon">
+                    <div class="search-desktop d-none">
+                        
+
+
+
+
+
+
+
+<div class="site-search">
+    <form role="search" action="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Search-Show" method="get" name="simpleSearch">
+        <input class="form-control search-field" type="text" name="q" value="" placeholder="Search" role="combobox" aria-describedby="search-assistive-text" aria-haspopup="listbox" aria-owns="search-results" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="" aria-controls="search-results" aria-label="Enter Keyword or Item No." autocomplete="off">
+        <button type="reset" name="reset-button" class="reset-button" aria-label="Clear search keywords">
+            <svg class="c-icon c-icon--search-icon c-icon-close" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-close"></use>
+    
+</svg>
+
+        </button>
+        <button type="submit" name="search-button" class="search-button" aria-label="Submit search keywords">
+            <img src="./Sites-maison-birks-ca-Site_files/search.png" alt="Search" tabindex="0" class="c-icon c-icon--search-icon">
+        </button>
+        <div class="suggestions-wrapper" data-url="/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/SearchServices-GetSuggestions?q="></div>
+        <input type="hidden" value="en_CA" name="lang">
+    </form>
+</div>
+
+                    </div>
+                    <div class="store-locator d-flex hidden-sm-down">
+                        <a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Stores-Find?showMap=true&amp;horizontalView=true&amp;isForm=true" class="d-flex">
+                            <img src="./Sites-maison-birks-ca-Site_files/store-locator.png" alt="Locate Stores" tabindex="0" class="location-icon header-icon">
+                            <span class="icon-title-name hidden-lg-down hide">
+                                Store Locator
+                            </span>
+                        </a>
+                    </div>
+                    
+                        <div class="account hidden-sm-down">
+                            
+
+
+
+
+
+
+
+    <div class="user" aria-expanded="false">
+        <a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1#" id="myaccount" class="d-flex" aria-haspopup="false" aria-label="Account" role="button">
+            <img src="./Sites-maison-birks-ca-Site_files/account.png" alt="My Account" tabindex="0" class="c-icon c-icon--sign-in header-icon">
+            <span class="icon-title-name hidden-lg-down hide">
+                My Account
+            </span>
+        </a>
+         <div class="popover popover-bottom">
+            <ul class="nav" role="menu" aria-label="My account navigation" aria-hidden="true">
+                <li class="nav-item" role="presentation"><a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Login-Show?action=login" role="menuitem">Sign In</a></li>
+                <li class="nav-item" role="presentation"><a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Login-Show?action=register" role="menuitem">Create an Account</a></li>
+                <li class="nav-item" role="presentation"><a href="https://www.maisonbirks.com/en_ca/birks-flexiticard.html" role="menuitem">Maison Birks FlexitiCard</a></li>
+
+                
+            </ul>
+        </div>
+
+        <a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1" role="button" aria-label="Login to your account">
+
+        </a>
+    </div>
+    
+
+
+                        </div>
+                    
+                    
+                        <div class="minicart d-flex" data-action-url="/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Cart-MiniCartShow">
+                            
+
+
+
+
+
+
+
+<div class="minicart-total">
+    <a class="minicart-link d-flex" href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Cart-Show" title="Bag 0 Items" aria-label="Bag 0 Items" aria-haspopup="true">
+        <img src="./Sites-maison-birks-ca-Site_files/new-shopping-bag.png" alt="View Cart" class="c-icon c-icon--shopping-bag minicart-icon header-icon">
+        <span class="minicart-quantity">
+            0
+        </span>
+        <span class="icon-title-name hidden-lg-down hide">
+            My Bag
+        </span>
+    </a>
+</div>
+
+<div class="minicart-total hide-no-link d-none">
+        <svg class="c-icon c-icon--shopping-bag header-icon minicart-icon" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-cart"></use>
+    
+</svg>
+
+        <span class="minicart-quantity">
+            0
+        </span>
+</div>
+<div class="popover popover-bottom"></div>
+
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="search-mobile search-mobile-main d-none">
+                
+
+
+
+
+
+
+
+<div class="site-search">
+    <form role="search" action="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Search-Show" method="get" name="simpleSearch">
+        <input class="form-control search-field" type="text" name="q" value="" placeholder="Search" role="combobox" aria-describedby="search-assistive-text" aria-haspopup="listbox" aria-owns="search-results" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="" aria-controls="search-results" aria-label="Enter Keyword or Item No." autocomplete="off">
+        <button type="reset" name="reset-button" class="reset-button" aria-label="Clear search keywords">
+            <svg class="c-icon c-icon--search-icon c-icon-close" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-close"></use>
+    
+</svg>
+
+        </button>
+        <button type="submit" name="search-button" class="search-button" aria-label="Submit search keywords">
+            <img src="./Sites-maison-birks-ca-Site_files/search.png" alt="Search" tabindex="0" class="c-icon c-icon--search-icon">
+        </button>
+        <div class="suggestions-wrapper" data-url="/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/SearchServices-GetSuggestions?q="></div>
+        <input type="hidden" value="en_CA" name="lang">
+    </form>
+</div>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div role="main" id="maincontent">
+
+    
+    <div class="container login-page">
+        <div class="col-12">
+            <h1 class="page-title col-6">Wishlist</h1>
+            <span class="need-help col-6 en_ca">
+                <span>Need assistance? Call us at</span>
+                <span class="phone-number">+1 (855) 873-7373</span>
+            </span>
+        </div>
+        
+        <div class="row">
+    <div class="col page-breadcrumb" role="navigation" aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+            
+                <li class="breadcrumb-item ">
+                    
+                        <a href="https://www.maisonbirks.com/">
+                             Home
+                        </a>
+                    
+                </li>
+            
+                <li class="breadcrumb-item ">
+                    
+                        <a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Account-Show">
+                             My Account
+                        </a>
+                    
+                </li>
+            
+                <li class="breadcrumb-item last-item">
+                    
+                        <span class="last-item" aria-current="page">
+                            Wishlist
+                        </span>
+                    
+                </li>
+            
+        </ol>
+    </div>
+</div>
+
+        
+            
+
+
+
+
+
+
+<p class="wishlist-guest-description">Sign in or create an account to add items to your Wishlist.</p>
+<div class="row justify-content-center">
+    <div class="col-sm-8 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="login-form-nav">
+                    
+
+
+
+
+
+
+<ul class="nav nav-tabs nav-fill" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1#login" data-toggle="tab" role="tab" aria-controls="login" aria-selected="true" id="login-tab">
+            <svg class="log-in-icon" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-log-in"></use>
+    
+</svg>
+
+
+            Login
+         </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1#register" data-toggle="tab" role="tab" aria-controls="register" aria-selected="false" id="register-tab">
+            <svg class="create-account-icon" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-create-account"></use>
+    
+</svg>
+
+
+            Create Account
+         </a>
+    </li>
+</ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <form action="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Account-Login" class="login" method="POST" name="login-form">
+    <div class="form-group required">
+        <label class="form-control-label" for="login-form-email">
+            Email
+        </label>
+        <input type="email" id="login-form-email" required="" aria-required="true" data-missing-error="Please fill out this field." data-pattern-mismatch="Please enter a valid email address (Ex. johndoe@domain.com)." class="form-control required en_ca" aria-describedby="form-email-error" name="loginEmail" value="" maxlength="50" pattern="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$">
+        <div class="invalid-feedback" id="form-email-error"></div>
+    </div>
+
+    <div class="form-group required">
+        <label class="form-control-label" for="login-form-password">
+            Password
+        </label>
+        <input type="password" id="login-form-password" required="" aria-required="true" class="form-control required" aria-describedby="form-password-error" data-missing-error="Please fill out this field." name="loginPassword">
+        <div class="invalid-feedback" id="form-password-error"></div>
+    </div>
+
+    <div class="clearfix">
+        <div class="form-group custom-control custom-checkbox pull-left remember-me">
+            <input type="checkbox" class="custom-control-input" id="rememberMe" name="loginRememberMe" value="true">
+            <label class="custom-control-label" for="rememberMe">
+                Remember me
+            </label>
+        </div>
+
+        <div class="pull-right forgot-password text-right">
+            <a class="d-none" href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Account-PasswordReset" title="Forgot Password?">
+                Forgot Password?
+            </a>
+
+            <a id="password-reset" title="Forgot Password?" data-toggle="modal" href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Account-PasswordResetDialogForm" data-target="#requestPasswordResetModal">
+                Forgot Password?
+            </a>
+        </div>
+    </div>
+
+    <input type="hidden" name="csrf_token" value="j-FzVMg6Yr4hGJpXQB6liTMfQQyVFJHgroW9ySmBKnLzz0L_YUxGpRAo7FqOgRL9QSIkXLmREqyQnjrFrRu-GbEBKD63DJT9UQgND51QJhJqO-DnRS7r7T_ycNywNfE4fOEtvhrIrpOCiiOWFARLsPi-xPe61LPHFs6ibHGGWFjHwv3UcHg=">
+
+    <div class="login-form-button">
+        <button type="submit" class="btn btn-primary">Log in</button>
+    </div>
+</form>
+
+                            
+
+
+
+
+
+
+<div class="modal fade" id="requestPasswordResetModal" tabindex="-1" role="dialog" aria-labelledby="requestPasswordResetModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title request-password-title">Forgot your Password</h2>
+                <button type="button" class="close d-none d-sm-block" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg class="close-reset-password-icon" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-close-reset-password"></use>
+    
+</svg>
+
+                    </span>
+                </button>
+                <span class="d-block d-sm-none">
+                    <legend class="d-flex justify-content-end mb-4 form-group required required-legend">
+    <span class="c-required-legend text-right float-right ml-1 form-control-label required-legend">Required</span>
+</legend>
+
+                </span>
+            </div>
+
+            <div class="modal-body">
+                
+<form class="reset-password-form" action="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Account-PasswordResetDialogForm?mobile=" method="POST" name="email-form" id="email-form">
+    
+    
+    
+    <div class="request-password-body">
+        <p>
+            Provide your account email address to receive an email to reset your password.
+        </p>
+        <div class="form-group required">
+            <label class="form-control-label" for="reset-password-email">
+                Email
+            </label>
+            <input id="reset-password-email" type="email" class="form-control" name="loginEmail" aria-describedby="emailHelp" placeholder="Email">
+            <div class="invalid-feedback"></div>
+        </div>
+    </div>
+    <input type="hidden" id="gRecaptchaToken" name="gRecaptchaToken">
+    <div class="send-email-btn forgot-password-button">
+        <button type="submit" id="submitEmailButton" class="btn btn-primary" data-sitekey="null" data-isrecaptcha="null">
+            Send
+        </button>
+    </div>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            
+
+
+
+
+
+
+
+<form action="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Wishlist-Show?rurl=1" class="login-oauth" method="post" name="login-oauth-form">
+    <div class="form-group">
+        <a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Login-OAuthLogin?oauthProvider=Google&amp;oauthLoginTargetEndPoint=1" class="btn btn-block btn-outline-primary oauth-google" role="button" aria-pressed="true">
+            <svg class="c-icon c-icon--oauth-icon" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-google"></use>
+    
+</svg>
+
+            Login with Google
+        </a>
+    </div>
+    <div class="form-group">
+        <a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Login-OAuthLogin?oauthProvider=Facebook&amp;oauthLoginTargetEndPoint=1" class="btn btn-block btn-outline-primary oauth-facebook" role="button" aria-pressed="true">
+                <svg class="c-icon c-icon--oauth-icon" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-facebook-square"></use>
+    
+</svg>
+
+                Login with Facebook
+        </a>
+    </div>
+    <div class="form-group">
+        
+    </div>
+</form>
+
+                        </div>
+                        <div class="tab-pane" id="register" role="tabpanel" aria-labelledby="register-tab">
+                            
+<form action="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Account-SubmitRegistration?rurl=1" class="registration" method="POST" name="dwfrm_profile">
+
+    
+
+    <div class="form-group
+        required">
+        <label class="form-control-label" for="registration-form-fname">
+            First Name
+        </label>
+        <input type="text" class="form-control" id="registration-form-fname" data-missing-error="Please fill out this field." data-range-error="Must be 50 characters or less." aria-describedby="form-fname-error" name="dwfrm_profile_customer_firstname" required="" aria-required="true" value="" maxlength="50">
+        <div class="invalid-feedback" id="form-fname-error"></div>
+    </div>
+
+    <div class="form-group
+        required">
+        <label class="form-control-label" for="registration-form-lname">
+            Last Name
+        </label>
+        <input type="text" class="form-control" id="registration-form-lname" data-missing-error="Please fill out this field." data-range-error="Must be 50 characters or less." aria-describedby="form-lname-error" name="dwfrm_profile_customer_lastname" required="" aria-required="true" value="" maxlength="50">
+        <div class="invalid-feedback" id="form-lname-error"></div>
+    </div>
+
+    <div class="form-group
+        required">
+        <label class="form-control-label create-account-phone-number" for="registration-form-phone">
+            Phone Number
+        </label>
+        <span class="phone-example d-block">Example: 9234567890</span>
+        <input type="tel" class="form-control" id="registration-form-phone" data-missing-error="Please fill out this field." data-pattern-mismatch="Please enter a valid phone number" data-range-error="Must be 50 characters or less." aria-describedby="form-phone-error" name="dwfrm_profile_customer_phone" required="" aria-required="true" value="" maxlength="2147483647" pattern="^\(?([2-9][0-8][0-9])\)?[\-\. ]?([2-9][0-9]{2})[\-\. ]?([0-9]{4})(\s*x[0-9]+)?$">
+        <div class="invalid-feedback" id="form-phone-error"></div>
+    </div>
+
+    <div class="form-group
+        required">
+        <label class="form-control-label" for="registration-form-email">
+            Email
+        </label>
+        <input type="email" class="form-control en_ca" id="registration-form-email" data-missing-error="Please fill out this field." data-pattern-mismatch="Please enter a valid email address (Ex. johndoe@domain.com)." data-range-error="Must be 50 characters or less." aria-describedby="form-email-error" name="dwfrm_profile_customer_email" required="" aria-required="true" value="" maxlength="50" pattern="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$">
+        <div class="invalid-feedback" id="form-email-error"></div>
+    </div>
+
+    <div class="form-group
+        required">
+        <label class="form-control-label" for="registration-form-email-confirm">
+            Confirm Email
+        </label>
+        <input type="email" class="form-control en_ca" id="registration-form-email-confirm" data-missing-error="Please fill out this field." data-pattern-mismatch="Please enter a valid email address (Ex. johndoe@domain.com)." data-range-error="Must be 50 characters or less." aria-describedby="form-email-confirm-error" name="dwfrm_profile_customer_emailconfirm" required="" aria-required="true" value="" maxlength="50" pattern="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$">
+        <div class="invalid-feedback" id="form-email-confirm-error"></div>
+    </div>
+
+    <div class="form-group
+        required">
+        <label class="form-control-label" for="registration-form-password">
+            Password
+        </label>
+        <input type="password" class="form-control" id="registration-form-password" data-missing-error="Please fill out this field." data-range-error="This field needs 8 to 255 characters" aria-describedby="form-password-error" autocomplete="off" name="dwfrm_profile_login_password" required="" aria-required="true" value="" maxlength="255" minlength="8">
+        <div class="invalid-feedback" id="form-password-error"></div>
+        
+        
+
+
+
+
+
+
+<div class="js-password-validation">
+    <h2 class="h6">
+        <svg class="info-icon" aria-hidden="true">
+     
+    <use class="" xlink:href="/on/demandware.static/Sites-maison-birks-ca-Site/-/default/dw0f8ade86/svg/symbols.svg#svg-info"></use>
+    
+</svg>
+
+        Password requirements
+    </h2>
+    <ul class="js-password-validation__list c-form-fields__password-validation">
+        <li class="js-password-validation__item is-invalid" data-regexp=".{null,}">
+            null
+        </li>
+        
+        
+        
+        
+    </ul>
+</div>
+
+        
+    </div>
+
+    <div class="form-group
+        required">
+        <label class="form-control-label" for="registration-form-password-confirm">
+            Confirm Password
+        </label>
+        <input type="password" class="form-control" id="registration-form-password-confirm" data-missing-error="Please fill out this field." data-range-error="This field needs 8 to 255 characters" aria-describedby="form-password-confirm-error" autocomplete="off" name="dwfrm_profile_login_passwordconfirm" required="" aria-required="true" value="" maxlength="255" minlength="8">
+        <div class="invalid-feedback" id="form-password-confirm-error"></div>
+    </div>
+
+    <div class="form-group custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="add-to-email-list" name="dwfrm_profile_customer_addtoemaillist" value="true">
+        <label class="custom-control-label" for="add-to-email-list">
+            Sign up to our newsletter
+        </label>
+    </div>
+
+    <input type="hidden" name="csrf_token" value="j-FzVMg6Yr4hGJpXQB6liTMfQQyVFJHgroW9ySmBKnLzz0L_YUxGpRAo7FqOgRL9QSIkXLmREqyQnjrFrRu-GbEBKD63DJT9UQgND51QJhJqO-DnRS7r7T_ycNywNfE4fOEtvhrIrpOCiiOWFARLsPi-xPe61LPHFs6ibHGGWFjHwv3UcHg=">
+    <input type="hidden" id="gRecaptchaToken" name="gRecaptchaToken">
+
+    <div class="create-account-form-button">
+        <button type="submit" class="btn btn-primary create-account" data-sitekey="null" data-isrecaptcha="null">
+            Create Account
+        </button>
+    </div>
+
+    <div class="law25consent-disclaimer">
+        
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="6abf83d7bd2a6876ffb173914c" -->
+        *We value your privacy. By clicking the button above, I allow Birks to collect and use my personal information to fulfill my request in accordance with the Birks <a class="privacy-link" href="https://www.maisonbirks.com/en_ca/privacy-policy.html" title="Privacy Policy"> Privacy Policy.</a>
+    </div> <!-- End content-asset -->
+
+
+
+    </div>
+    
+</form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+    </div>
+
+</div>
+<footer id="footercontent">
+    
+    
+    
+    
+    
+    <div class="container">
+        <div class="footer-container row">
+            <div class="footer-item top-footer-item col-lg-4 collapsible-md">
+                
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="1761f616892e2611312664b5d3" -->
+        <div>
+	<button class="title btn text-left btn-block " aria-expanded="false" aria-controls="collapsible-account">DISCOVER</button>
+</div>
+<ul id="collapsible-account" class="menu-footer content">
+	<div class="row-1">	
+                <li><a href="https://www.maisonbirks.com/en_ca/sale/" title="Go to Our">SALE</a>
+		</li>
+		<li><a href="https://www.maisonbirks.com/en_ca/brands/all-brands-a-z/" title="Go to Our">OUR BRANDS</a>
+		</li>
+                <li><a href="https://www.maisonbirks.com/en_ca/1879-editorial.html" title="Go to Our">1879 EDITORIAL</a>
+		</li>
+		<li><a href="https://birkscareers.com/" target="_blank" title="Go to Careers">CAREERS</a>
+		</li>
+		<li><a href="https://www.maisonbirks.com/en_ca/investor-relations.html" title="Go to Investor Relations">INVESTOR RELATIONS</a>
+		</li>
+	</div>
+	<div class="row-2">
+                 <li><a href="https://www.maisonbirks.com/en_ca/wholesale.html" title="Go to Wholesale">WHOLESALE</a>
+		</li>
+                 <li><a href="https://www.maisonbirks.com/en_ca/press.html" title="Go to Press">PRESS</a>
+		</li>
+		<li><a href="https://www.maisonbirks.com/en_ca/terms-of-use.html" title="Go to Terms of Use">TERMS OF USE</a>
+		</li>
+<button id="ot-sdk-btn" class="ot-sdk-show-settings cookie" style="border: none; 
+color: #000000; 
+background-color: white; 
+font-family: p22-underground, sans-serif;
+font-size: 12px;
+font-weight: 350; 
+align-items: left;
+align-content: left;
+align-text: left;
+text-transform: uppercase;
+padding: none; ">Cookies Settings</button>
+	</div>
+</ul>
+    </div> <!-- End content-asset -->
+
+
+
+            </div>
+            <div class="footer-item col-lg-4 middle-footer-item collapsible-md">
+                
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="092a3078d85914bf3b1d91f511" -->
+        <style>
+.cookie:hover {
+text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px){
+.cookie {
+font-size: 14px;
+}
+}
+
+@media only screen and (max-width: 992px){
+.cookie{
+margin-left: -10px;
+font-size: 12px; 
+}
+}
+
+@media only screen and (min-width: 993px){
+.cookie {
+margin-left: -25px;
+font-size: 12px; 
+}
+}
+
+</style>
+<div>
+	<button class="title btn text-left btn-block" aria-expanded="false" aria-controls="collapsible-account">SERVICES</button>
+</div>
+<ul id="collapsible-account" class="menu-footer content">
+	<div class="row-1">
+		<li><a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/ContactUs-Landing" title="Go to Contact Us">CONTACT US</a>
+		</li>
+		<li><a href="https://www.maisonbirks.com/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/Stores-Find?showMap=true&amp;horizontalView=true&amp;isForm=true" title="Go to Store">FIND A STORE</a>
+		</li>
+		<li><a href="https://www.maisonbirks.com/en_ca/our-services.html" target="_blank" title="Go to Services">OUR SERVICES</a>
+		</li>
+		<li><a href="https://www.maisonbirks.com/en_ca/maison-birks-atelier.html" title="Go to Atelier">ATELIER</a>
+		</li>
+		<li><a href="https://www.maisonbirks.com/en_ca/shipping-and-returns.html" title="Go to Shipping and Returns">SHIPPING AND RETURNS</a>
+		</li>
+	</div>
+	<div class="row-2">
+		<li><a href="https://www.maisonbirks.com/en_ca/faq.html" title="Go to FAQ">FAQ</a>
+		</li>
+		<li><a href="https://www.maisonbirks.com/en_ca/financing.html" title="Go to Maison Birks Finacing">MAISON BIRKS FINANCING</a>
+		</li>
+		<li><a href="https://www.maisonbirks.com/en_ca/gold-exchange.html" title="Go to Gold Exchange">GOLD EXCHANGE</a>
+		</li>
+		<li><a href="https://www.maisonbirks.com/en_ca/brands/birks/birks-bridal/trace-my-diamond/" title="Go to Trace my Birks Canadian Diamond">TRACE MY BIRKS CANADIAN DIAMOND</a>
+		</li>
+
+	</div>
+</ul>
+    </div> <!-- End content-asset -->
+
+
+
+            </div>
+            <div class="footer-social-email-form col-lg-4">
+                <div class="home-email-signup">
+                    <span class="news-letter common">NEWSLETTER</span>
+                    <span class="customer-service common">Sign up to our newsletter and be the first to know about special offers and upcoming events.</span>
+                    <div class="container">
+                        <form role="form">
+                            
+                            <div class="row">
+                                <div class="js-email-signup-wrapper">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control js-email-signup-input" name="hpEmailSignUp" placeholder="Email Address" aria-label="Email Address">
+                                        <span class="input-group-append">
+                                            <button type="submit" class="btn btn-primary subscribe-email" data-sitekey="null" data-isrecaptcha="null" data-href="/on/demandware.store/Sites-maison-birks-ca-Site/en_CA/NewsLetterSubscription-SubmitSubscription">SIGN UP </button>
+                                        </span>
+                                        <input type="hidden" id="gRecaptchaToken" name="gRecaptchaToken">
+                                    </div>
+
+                                    <div class="email-signup-message js-email-signup">
+                                        <div class="email-signup-alert"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <span class="follow-us">FOLLOW US</span>
+                    
+	 
+
+
+	
+    
+        <ul class="social-links">
+	<li><a aria-label="Facebook" href="https://www.facebook.com/maisonbirks" target="_blank"><img alt="Facebook" src="./Sites-maison-birks-ca-Site_files/facebook.svg" title="Facebook"></a>
+
+	</li>
+	<li><a aria-label="Instagram" href="https://www.instagram.com/maisonbirks/" target="_blank"><img alt="Instagram" src="./Sites-maison-birks-ca-Site_files/instagram.svg" title="Instagram"></a>
+
+	</li>
+	<li><a aria-label="Pinterest" href="http://www.pinterest.com/maisonbirks/" target="_blank"><img alt="Pinterest" src="./Sites-maison-birks-ca-Site_files/pinterest.svg" title="Pinterest"></a>
+
+	</li>
+</ul>
+    
+
+ 
+	
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div class="footer-copyright">
+        <div class=" copyright-notice">
+            
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="dfc392d4776ed181306a971621" -->
+        <div class="copyright">Copyright © 2025 Birks Group Inc. All rights reserved.</div>
+    </div> <!-- End content-asset -->
+
+
+
+        </div>
+    </div>
+</footer>
+
+
+<div class="custom-cursor"></div> <!-- Fake Cursor -->
+
+<script>
+    // List of element classes to be hovered and clicked in order
+    const elementClicks = [
+        "element1", 
+        "element2",
+        "element3", 
+        "page-top1"
+    ];
+
+    const customCursor = document.querySelector(".custom-cursor"); // Fake cursor
+
+    // Function to move the custom cursor
+    function moveCursorToElement(element, callback) {
+        if (element) {
+            const rect = element.getBoundingClientRect();
+            const cursorX = rect.left + rect.width / 2; // Center X
+            const cursorY = rect.top + rect.height / 2; // Center Y
+
+            // Move the custom cursor with a delay
+            customCursor.style.left = `${cursorX}px`;
+            customCursor.style.top = `${cursorY}px`;
+
+            // Wait for the cursor to reach before triggering click
+            setTimeout(() => {
+                element.classList.add("hover-effect");
+                setTimeout(() => {
+                    element.classList.remove("hover-effect");
+                    element.click();
+                    callback(); // Continue to next step
+                }, 500); // Hover for 500ms before clicking
+            }, 300); // Cursor move delay
+        } else {
+            callback(); // Skip if element not found
+        }
+    }
+
+    // Function to start auto-hover and clicking
+    function autoHoverAndClick(index = 0) {
+        if (index < elementClicks.length) {
+            const element = document.querySelector(`.${elementClicks[index]}`);
+            moveCursorToElement(element, () => {
+                setTimeout(() => autoHoverAndClick(index + 1), 1900);
+            });
+        } else {
+            // Refresh the page after 3-second delay
+            setTimeout(() => location.reload(), 3000);
+        }
+    }
+
+    // Start hovering and clicking after a short delay
+    setTimeout(() => autoHoverAndClick(), 1900);
+</script>
+
+
+
+
+<script type="text/javascript" async="" src="./Sites-maison-birks-ca-Site_files/monsido-script.js.download"></script>
+
