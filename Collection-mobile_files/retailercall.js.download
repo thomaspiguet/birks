@@ -1,0 +1,31 @@
+function getParameterByName(name,url){if(!url)url=window.location.href
+    name=name.replace(/[\[\]]/g,"\\$&")
+    var regex=new RegExp("[?&]"+name+"(=([^&#]*)|&|#|$)"),results=regex.exec(url)
+    if(!results)return null
+    if(!results[2])return""
+    return decodeURIComponent(results[2].replace(/\+/g," "))}
+    function RetailerClock(){var _self=this
+     
+    var webservice="https://retailers.rolex.com/app/dealer/clock?colour=__COLOUR__&apiKey=__DEALER_API_KEY__&lang=__LANG__"
+    var referer=document.referrer
+    domainName=window.location.hostname
+     this.getRetailerClock=function(config){this.config=config
+    var newForm=webservice
+    newForm=this.replaceValue(newForm,"__DEALER_API_KEY__",config.dealerAPIKey)
+    newForm=this.replaceValue(newForm,"__LANG__",config.lang)
+    newForm=this.replaceValue(newForm,"__COLOUR__",config.colour)
+    var targetHTML=document.getElementById(_self.getContainerId())
+    if(targetHTML===null){var targetHTML_multiple=document.querySelectorAll(".rolex-retailer-clock")}
+    var xhr=new XMLHttpRequest()
+    xhr.open("GET",newForm)
+    xhr.onload=function(){if(xhr.status===200){var response=JSON.parse(xhr.responseText)
+    if(response.url!=null){var iframeHtml='<div class="LinkEnabler" style="position:absolute; height:70px; width:150px; z-index:1;"></div><iframe id="rolex_retailer" title="Rolex Official Retailer" src="'+
+    response.url+'" style="width:150px;height:70px;border:0;margin:0;padding:0;overflow:hidden;z-index:0;position:relative;scroll:none" SCROLLING=NO frameborder="NO"></iframe>'
+    if(targetHTML_multiple!=null||targetHTML_multiple!=undefined){for(var i=0;i<targetHTML_multiple.length;i++){
+    targetHTML_multiple[i].innerHTML=iframeHtml}}else{targetHTML.innerHTML=iframeHtml}}}else{}}
+    xhr.send()}
+    this.getContainerId=function(){return typeof this.containerId!=="undefined"?this.containerId:this.config?"rolex-retailer-clock":"RetailerClock"}
+    this.replaceValue=function(target,key,value){return target.split(key).join(value)}}
+    RolexRetailerClock=function(){var _self=this
+    RetailerClock.call(this)
+    _self=function(config){_self.getRetailerClock.call(_self,config)}}
