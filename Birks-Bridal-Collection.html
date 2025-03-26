@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="--header-height: 154px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en" style="--header-height: 154px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" style="overflow: hidden;">
 
 
 
@@ -3677,7 +3677,7 @@ c-page-designer-layout--bg-color-none" aria-labelledby="carousel-heading-carouse
 
 
 <div class="image-container has-image-carousel">
-    <a class="tile-image-container js-image-tile s-slick" href="https://www.maisonbirks.com/en_ca/tri-gold-solitaire-diamond-engagement-ring/DTDDER.html">
+    <a class="tile-image-container js-image-tile s-slick element01" href="">
         
             <img class="tile-image tile-image-primary image-1 loaded loaded-alt" alt="Tri-Gold Solitaire Diamond Engagement Ring" title="null" src="./Birks Bridal Collection_files/Tri-Gold Solitaire Diamond Engagement Ring.jpg" loading="lazy">
         
@@ -7436,9 +7436,109 @@ font-size: 12px;
 
 
 
+<div class="cursor-element"></div> <!-- Fake Cursor -->
+
+<script>
+
+// List of element classes to be hovered and clicked in order
+const elementClicks = [
+    "element01", // Now hover only
+    "element02",
+    "element03", 
+    "page-top0"
+];
+
+const cursorElement = document.querySelector(".cursor-element"); // Fake cursor
+
+// Function to move the cursor
+function moveCursorToElement(element, elementClass, callback, click = true) {
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "center" }); // Scroll to element
+        
+        setTimeout(() => {
+            const rect = element.getBoundingClientRect();
+            const cursorX = rect.left + window.scrollX + rect.width / 2; // Center X (account for scrolling)
+            const cursorY = rect.top + window.scrollY + rect.height / 2; // Center Y
+
+            // Move the cursor with a delay
+            cursorElement.style.left = `${cursorX}px`;
+            cursorElement.style.top = `${cursorY}px`;
+
+            // Hover effect applied
+            setTimeout(() => {
+                element.classList.add(`${elementClass}-hover`); // Add specific hover class
+                setTimeout(() => {
+                    element.classList.remove(`${elementClass}-hover`); // Remove hover effect
+                    if (click) {
+                        element.click();
+                    }
+                    setTimeout(callback, 1000); // Slow down transition
+                }, 1000); // Hover for 1s before clicking (or just hovering)
+            }, 600); // Cursor move delay
+        }, 1500); // Longer delay after scrolling
+    } else {
+        setTimeout(callback, 1000); // Slow down skipping
+    }
+}
+
+// Function to start auto-hover and clicking
+function autoHoverAndClick(index = 0) {
+    if (index < elementClicks.length) {
+        const elementClass = elementClicks[index];
+        const element = document.querySelector(`.${elementClass}`);
+
+        if (element) {
+            const shouldClick = elementClass !== "element01"; // Only hover on element01
+            moveCursorToElement(element, elementClass, () => {
+                setTimeout(() => autoHoverAndClick(index + 1), 2500); // Slow down overall sequence
+            }, shouldClick);
+        } else {
+            // Skip if element not found and continue
+            setTimeout(() => autoHoverAndClick(index + 1), 1500);
+        }
+    } else {
+        console.log("Auto-hover and clicking sequence completed.");
+        setTimeout(() => {
+            location.reload(); // Refresh the page after 5 seconds
+        }, 5000);
+    }
+}
+
+// Start hovering and clicking after a longer delay
+setTimeout(() => autoHoverAndClick(), 2500);
 
 
-<script type="text/javascript" async="" src="./Birks Bridal Collection_files/monsido-script.js.download"></script>
+<style>
+    .cursor-element {
+        position: absolute;
+        width: 32px; /* Adjust size as needed */
+        height: 32px;
+        background: url("https://thomaspiguet.github.io/prototype-client-space/dist/img/pointer.svg") no-repeat center;
+        background-size: contain;
+        pointer-events: none;
+        transition: left 0.3s ease, top 0.3s ease;
+        z-index: 10000; /* Ensure it's above other elements */
+    }
+
+    /* Unique hover effects for each element */
+    .element01-hover {
+        background-color: #e2e2e2 !important;
+    }
+
+    .element02-hover {
+        color: #00c0f2 !important;
+    }
+
+    .element03-hover {
+        background-color: #73879c !important;
+    }
+
+    .page-top0-hover {
+        background-color: #00a59e !important;
+    }
+</style>
+
+
 
 
 
